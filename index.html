@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口袋AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- 引入 Font Awesome 图标库 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #007BFF; /* 蓝色背景 */
+        }
+        header {
+            background-color: #0056b3; /* 导航栏颜色稍深 */
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease; /* 鼠标悬停过渡效果 */
+        }
+        nav ul li a:hover {
+            color: #ddd; /* 鼠标悬停时颜色变化 */
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 36px; /* 增大主标语字体大小 */
+        }
+        .hero p {
+            font-size: 18px; /* 增大描述字体大小 */
+        }
+        .hero button {
+            background-color: white;
+            color: #007BFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* 鼠标悬停过渡效果 */
+        }
+        .hero button:hover {
+            background-color: #ddd; /* 鼠标悬停时颜色变化 */
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .feature-card {
+            background-color: white;
+            color: #007BFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .feature-card i {
+            font-size: 36px;
+        }
+        .developer-community {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .developer-card {
+            background-color: #f8f9fa; /* 卡片背景颜色 */
+            border: 1px solid #ddd; /* 边框 */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .developer-card h3 {
+            color: #007BFF; /* 标题颜色 */
+        }
+        .developer-card a {
+            color: #007BFF; /* 链接颜色 */
+            text-decoration: none;
+        }
+        .developer-card a:hover {
+            text-decoration: underline; /* 鼠标悬停时添加下划线 */
+        }
+        .version-info {
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+        .download-cta {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .download-cta button {
+            background-color: white;
+            color: #007BFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* 鼠标悬停过渡效果 */
+        }
+        .download-cta button:hover {
+            background-color: #ddd; /* 鼠标悬停时颜色变化 */
+        }
+        footer {
+            background-color: #0056b3; /* 页脚背景颜色 */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>口袋AI</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">功能</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="hero">
+        <h2>将世界知识装进口袋</h2>
+        <p>口袋AI是一款强大的人工智能产品，为您提供便捷的知识服务。</p>
+        <button>开始使用</button>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-comments"></i> <!-- 使用 Font Awesome 图标 -->
+            <h3>基于中文模型优化的中文对话体验</h3>
+            <p>为中文用户提供流畅的对话体验。</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-desktop"></i> <!-- 使用 Font Awesome 图标 -->
+            <h3>针对中文用户优化的交互界面</h3>
+            <p>界面设计符合中文用户习惯。</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-wifi"></i> <!-- 使用 Font Awesome 图标 -->
+            <h3>智能网络错误处理与重试机制</h3>
+            <p>自动处理网络错误，确保服务稳定。</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-cogs"></i> <!-- 使用 Font Awesome 图标 -->
+            <h3>更适合中国用户的功能定制</h3>
+            <p>根据中国用户需求定制功能。</p>
+        </div>
+    </section>
+    <section class="developer-community">
+        <div class="developer-card">
+            <h3>开发者</h3>
+            <p>云中江树</p>
+        </div>
+        <div class="developer-card">
+            <h3>LangGPT 提示词社区</h3>
+            <a href="#">点击进入社区</a>
+        </div>
+        <div class="developer-card">
+            <h3>联系方式</h3>
+            <p>微信：[微信号]<br>GitHub：[GitHub 账号]<br>邮箱：[邮箱地址]</p>
+        </div>
+    </section>
+    <!-- 新添加的版本信息展示区域 -->
+    <div class="version-info">
+        <p>版本：1.0</p>
+    </div>
+    <!-- 新添加的下载引导区域 -->
+    <div class="download-cta">
+        <button>下载口袋AI</button>
+    </div>
+    <!-- 新添加的页脚 -->
+    <footer>
+        
